@@ -10,6 +10,9 @@ import FourMain from "./screens/FourMain.js";
 import FiveMain from "./screens/FiveMain.js";
 import MySetting from "./screens/MySetting.js";
 import GuestFiveMain from "./screens/GuestFiveMain.js";
+import MyInfo from "./screens/MyInfo.js";
+import ChatPage from "./screens/ChatPage.js";
+
 const Stack = createStackNavigator();
 
 export default function StackContainer() {
@@ -63,6 +66,16 @@ export default function StackContainer() {
       <Stack.Screen
         name="MySetting"
         component={MySetting}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="MyInfo"
+        component={MyInfo}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="ChatPage"
+        component={ChatPage}
         options={{ headerShown: false }}
       />
     </Stack.Navigator>

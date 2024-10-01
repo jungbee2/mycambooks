@@ -18,15 +18,6 @@ export default function GuestFiveMain() {
     <ScrollView contentContainerStyle={styles.scrollContainer}>
       <SafeAreaView style={styles.container}>
         <View style={styles.topContainer}>
-          <TouchableOpacity
-            style={styles.setButton}
-            onPress={() => navigation.navigate("MySetting")}
-          >
-            <Image
-              source={require("../../assets/icon/mypage/cogwheel.png")}
-              style={styles.setImg}
-            />
-          </TouchableOpacity>
         </View>
 
         <View style={styles.userContainer}>
